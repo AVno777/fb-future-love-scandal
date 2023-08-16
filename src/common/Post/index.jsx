@@ -4,11 +4,11 @@ import userImage from "../../assets/imgs/comment-user.webp";
 function Post() {
   return (
     <div className="p-5 bg-white flex w-9/12 items-start rounded-mlarge mr-4">
-      <div className="grow mr-8">
+      <div className="grow mr-8 w-3/5">
         <img
           src={postImage}
           alt="Post image"
-          className="object-none w-3/5 h-96 rounded-mlarge"
+          className="object-cover w-full h-96 rounded-mlarge"
         />
       </div>
       <div className=" w-2/5 grow-0">
