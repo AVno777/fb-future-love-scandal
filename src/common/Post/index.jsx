@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import postImage from "../../assets/imgs/post-image.webp";
-import userImage from "../../assets/imgs/comment-user.webp";
 import axios from "axios";
 
 function Post() {
@@ -37,7 +35,7 @@ function Post() {
       <div className="grow mr-8 w-3/5">
         <img
           src={radomEvent.User_Avatar}
-          alt="Post image"
+          alt="Post Avatar"
           className="object-cover w-full h-96 rounded-mlarge"
         />
       </div>
@@ -46,7 +44,7 @@ function Post() {
           <div className="w-fit h-fit mr-2">
             <img
               src={radomEvent.User_Avatar}
-              alt="User image"
+              alt="User Avatar"
               className="w-12 h-12 object-cover rounded-full mx-auto items-center"
             />
           </div>

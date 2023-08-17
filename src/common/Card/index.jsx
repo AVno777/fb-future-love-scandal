@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import cardImg from "../../assets/imgs/card-image.webp";
 import axios from "axios";
 
 function Card() {
