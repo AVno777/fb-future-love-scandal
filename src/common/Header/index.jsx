@@ -59,56 +59,58 @@ export const Header = () => {
             </g>
           </svg>
         </div>
-        <div className="relative flex items-center">
-          <input
-            type="text"
-            className=" pl-14 pr-16 py-2 border rounded-large"
-            placeholder="Search..."
-          />
-          <div className="absolute inset-y-0 left-0 pl-4 flex items-center cursor-pointer">
-            <svg
-              className="w-5 h-5 text-gray-400"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="search">
+        <div className="relative">
+          <div className="flex items-center">
+            <input
+              type="text"
+              className=" pl-14 pr-16 py-2 border rounded-large"
+              placeholder="Search..."
+            />
+            <div className="absolute left-3 cursor-pointer top-1/2 transform -translate-y-1/2">
+              <svg
+                className="w-5 h-5 text-gray-400"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="search">
+                  <path
+                    id="Vector"
+                    d="M14.6667 25.3333C20.5577 25.3333 25.3333 20.5577 25.3333 14.6667C25.3333 8.77563 20.5577 4 14.6667 4C8.77563 4 4 8.77563 4 14.6667C4 20.5577 8.77563 25.3333 14.6667 25.3333Z"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M28.0002 28L22.2002 22.2"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div className="absolute right-3 cursor-pointer top-1/2 transform -translate-y-1/2">
+              <svg
+                className="w-3 h-2.5 text-gray-400"
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  id="Vector"
-                  d="M14.6667 25.3333C20.5577 25.3333 25.3333 20.5577 25.3333 14.6667C25.3333 8.77563 20.5577 4 14.6667 4C8.77563 4 4 8.77563 4 14.6667C4 20.5577 8.77563 25.3333 14.6667 25.3333Z"
-                  stroke="#65676B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  id="Polygon 1"
+                  d="M8 14L15.7942 0.5H0.205771L8 14Z"
+                  fill="#65676B"
                 />
-                <path
-                  id="Vector_2"
-                  d="M28.0002 28L22.2002 22.2"
-                  stroke="#65676B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-            </svg>
-          </div>
-          <div className="absolute right-3 top-1/2 pr-3 transform -translate-y-1/2 cursor-pointer">
-            <svg
-              className="w-3 h-2.5 text-gray-400"
-              width="16"
-              height="14"
-              viewBox="0 0 16 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                id="Polygon 1"
-                d="M8 14L15.7942 0.5H0.205771L8 14Z"
-                fill="#65676B"
-              />
-            </svg>
+              </svg>
+            </div>
           </div>
         </div>
         <div className="flex flex-row">

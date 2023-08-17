@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import postImage from "../../assets/imgs/post-image.webp";
 import userImage from "../../assets/imgs/comment-user.webp";
+import axios from "axios";
+
 function Post() {
+  const [radomEvent, setRandomEvent] = useState({});
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.get("/db/sk-data.json");
+        const data = response.data;
+
+        const dataArrays = Object.values(data);
+
+        const flattenedData = dataArrays.reduce(
+          (acc, curr) => acc.concat(curr),
+          []
+        );
+
+        const shuffledData = flattenedData.sort(() => Math.random() - 0.5);
+
+        const randomIndex = Math.floor(Math.random() * shuffledData.length);
+        const selectedData = shuffledData[randomIndex];
+
+        setRandomEvent(selectedData);
+      } catch (error) {
+        console.error("Error fetching JSON data:", error);
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="p-5 bg-white flex w-9/12 items-start rounded-mlarge mr-4">
       <div className="grow mr-8 w-3/5">
         <img
-          src={postImage}
+          src={radomEvent.User_Avatar}
           alt="Post image"
           className="object-cover w-full h-96 rounded-mlarge"
         />
@@ -15,19 +45,14 @@ function Post() {
         <div className="flex items-center">
           <div className="w-fit h-fit mr-2">
             <img
-              src={userImage}
+              src={radomEvent.User_Avatar}
               alt="User image"
               className="w-12 h-12 object-cover rounded-full mx-auto items-center"
             />
           </div>
-          <div className="text-lg"> Username</div>
+          <div className="text-lg font-bold">{radomEvent.User_Name}</div>
         </div>
-        <div className="mt-3 mb-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa
-          odit rerum quia, voluptas facere distinctio quidem? Molestiae sequi,
-          animi, quaerat quos, exercitationem eaque voluptatem asperiores natus
-          nemo tempore assumenda?
-        </div>
+        <div className="mt-3 mb-6 font-semibold">{radomEvent.Name}</div>
         <div className="flex">
           <div className="flex grow">
             <svg
@@ -74,10 +99,10 @@ function Post() {
                 </linearGradient>
               </defs>
             </svg>
-            <p>13.2k views</p>
+            <p className="font-semibold">13.2k views</p>
           </div>
           <div className="flex grow-0">
-            <p>14</p>
+            <p className="font-semibold">14</p>
             <svg
               width="24"
               height="24"
@@ -106,7 +131,7 @@ function Post() {
             </svg>
           </div>
           <div className="flex grow-0 ml-2">
-            <p>14</p>
+            <p className="font-semibold">14</p>
             <svg
               width="24"
               height="24"
