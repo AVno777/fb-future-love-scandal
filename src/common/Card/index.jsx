@@ -30,7 +30,7 @@ function Card() {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex justify-between">
       {radomEvents.map((content) => (
         <div className="w-1/4 bg-white px-2 pt-2 pb-10 rounded-mlarge">
           <div className="mb-5">

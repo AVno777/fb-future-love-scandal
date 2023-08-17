@@ -9,18 +9,24 @@ function PostComments() {
       try {
         const response = await axios.get("/db/sk-data.json");
         const data = response.data;
+        console.log("data", data);
+        const flattenedData = Object.entries(data).reduce(function (
+          currentValue,
+          accumulateValue
+        ) {
+          const [key, value] = accumulateValue;
 
-        const dataArrays = Object.values(data);
-
-        const flattenedData = dataArrays.reduce(
-          (acc, curr) => acc.concat(curr),
-          []
-        );
+          return [
+            ...currentValue,
+            ...value.map((val) => ({ ...val, idParent: key })),
+          ];
+        },
+        []);
 
         const shuffledData = flattenedData.sort(() => Math.random() - 0.5);
 
         const selectedData = shuffledData.slice(0, 10);
-
+        console.log("selectedData", selectedData);
         setRandomEvents(selectedData);
       } catch (error) {
         console.error("Error fetching JSON data:", error);
