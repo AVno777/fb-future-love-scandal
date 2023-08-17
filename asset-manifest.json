@@ -1,19 +1,16 @@
 {
   "files": {
     "main.css": "/fb-future-love-scandal/static/css/main.3cee2a09.css",
-    "main.js": "/fb-future-love-scandal/static/js/main.4a88c303.js",
-    "static/media/card-image.webp": "/fb-future-love-scandal/static/media/card-image.38eebfa008bb540070db.webp",
-    "static/media/post-image.webp": "/fb-future-love-scandal/static/media/post-image.d6d162906e1ddd35ab42.webp",
+    "main.js": "/fb-future-love-scandal/static/js/main.36ef183d.js",
     "static/media/Starborn.ttf?display=swap": "/fb-future-love-scandal/static/media/Starborn.921086e813b46abea23a.ttf",
     "static/media/Starborn.woff2?display=swap": "/fb-future-love-scandal/static/media/Starborn.ed0e2193e8d5b3656fc1.woff2",
-    "static/media/comment-user.webp": "/fb-future-love-scandal/static/media/comment-user.af0f0b4ee169f306f45b.webp",
     "static/media/Starborn.woff?display=swap": "/fb-future-love-scandal/static/media/Starborn.905de4c89a44023d4fad.woff",
     "index.html": "/fb-future-love-scandal/index.html",
     "main.3cee2a09.css.map": "/fb-future-love-scandal/static/css/main.3cee2a09.css.map",
-    "main.4a88c303.js.map": "/fb-future-love-scandal/static/js/main.4a88c303.js.map"
+    "main.36ef183d.js.map": "/fb-future-love-scandal/static/js/main.36ef183d.js.map"
   },
   "entrypoints": [
     "static/css/main.3cee2a09.css",
-    "static/js/main.4a88c303.js"
+    "static/js/main.36ef183d.js"
   ]
 }
