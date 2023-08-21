@@ -29,14 +29,14 @@ function Card() {
   }, []);
 
   return (
-    <div className="flex justify-between">
+    <div className="grid grid-cols-4 gap-4">
       {radomEvents.map((content) => (
-        <div className="w-1/4 bg-white px-2 pt-2 pb-10 rounded-mlarge">
-          <div className="mb-5">
+        <div className=" bg-white px-2 pt-2 pb-8 rounded-mlarge">
+          <div className="mb-5 h-3/5">
             <img
               src={content.User_Avatar}
               alt="Card Avatar"
-              className="object-cover rounded-mlarge"
+              className="object-cover w-full h-full rounded-mlarge"
             />
           </div>
           <div className="flex">
@@ -58,6 +58,7 @@ function Card() {
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="cursor-pointer"
               >
                 <g id="Iconsax/Bold/eye">
                   <path
@@ -96,16 +97,17 @@ function Card() {
                   </linearGradient>
                 </defs>
               </svg>
-              <p className="font-semibold">13.2k views</p>
+              <p className="font-semibold ml-2">13.2k views</p>
             </div>
             <div className="flex ml-2">
-              <p className="font-semibold">14</p>
+              <p className="font-semibold mr-2">14</p>
               <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="cursor-pointer"
               >
                 <path
                   id="Vector 1"
@@ -128,13 +130,14 @@ function Card() {
               </svg>
             </div>
             <div className="flex ml-2">
-              <p className="font-semibold">14</p>
+              <p className="font-semibold mr-2">14</p>
               <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="cursor-pointer"
               >
                 <g id="Iconsax/Bold/messages3">
                   <path

@@ -59,6 +59,7 @@ function Post() {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="cursor-pointer"
             >
               <g id="Iconsax/Bold/eye">
                 <path
@@ -97,16 +98,17 @@ function Post() {
                 </linearGradient>
               </defs>
             </svg>
-            <p className="font-semibold">13.2k views</p>
+            <p className="font-semibold ml-2">13.2k views</p>
           </div>
           <div className="flex grow-0">
-            <p className="font-semibold">14</p>
+            <p className="font-semibold mr-2">14</p>
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="cursor-pointer"
             >
               <path
                 id="Vector 1"
@@ -129,13 +131,14 @@ function Post() {
             </svg>
           </div>
           <div className="flex grow-0 ml-2">
-            <p className="font-semibold">14</p>
+            <p className="font-semibold mr-2">14</p>
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="cursor-pointer"
             >
               <g id="Iconsax/Bold/messages3">
                 <path

@@ -3,8 +3,8 @@ import React from "react";
 export const Header = () => {
   return (
     <div className="h-24 w-screen absolute top-0 left-0 bg-gradient-to-l from-purple-500 to-pink-500">
-      <div className="flex p-6 justify-center items-center gap-20">
-        <div className="flex">
+      <div className="flex py-6 px-28 justify-between items-center gap-20">
+        <div className="flex py-2">
           <svg
             width="40"
             height="34"
@@ -116,14 +116,14 @@ export const Header = () => {
         <div className="flex flex-row">
           <button
             type="button"
-            className="text-white bg-blue-700 font-bold rounded-mlarge px-2.5 py-2 text-center mb-1 justify-center items-center mr-4"
+            className="text-white bg-blue-700 font-bold rounded-mlarge px-2.5 py-2 text-center justify-center items-center mr-4"
           >
             Sign In
           </button>
 
           <button
             type="button"
-            className="text-white bg-blue-700 font-bold rounded-mlarge px-2.5 py-2 text-center mr-1 mb-1 justify-center items-center"
+            className="text-white bg-blue-700 font-bold rounded-mlarge px-2.5 py-2 text-center mr-1 justify-center items-center"
           >
             Register
           </button>
